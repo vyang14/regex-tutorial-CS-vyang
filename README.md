@@ -4,7 +4,7 @@ Regular Expression, or Regex for short, are methods or rules for helping develop
 
 ## Summary
 
-This brief tutorial will cover a number of basic and advanced Regular Expressions and how to implement them in JavaScript.
+This brief tutorial will cover a number of basic and advanced Regular Expressions.
 
 ## Table of Contents
 
@@ -69,9 +69,9 @@ To start, the contents within our expression must have a '/' at the start AND en
 
 * <code>[^]</code> - **Negated Set** - Match any characters not inside of the brackets.
 
-* <code>[a-e</code> - **Range** - Matches any characters that contains a character code between the two specified characters included between the brackets.
+* <code>[a-e]</code> - **Range** - Matches any characters that contains a character code between the two specified characters included between the brackets.
 
-        In this case, this would search for all letters from 'a' to 'e'
+        In this case, this would search for all letters from 'a' to 'e'.
 
 ### The OR Operator
 
@@ -89,7 +89,7 @@ To start, the contents within our expression must have a '/' at the start AND en
 
 ### Character Escapes
 
-* <code>\+</code> - **Reserved Characters** - The following characters has special meaning and should be preceded by a \ to represent a literal character.
+* <code>`\+`</code> - **Reserved Characters** - The following characters has special meaning and should be preceded by a \ to represent a literal character.
 
 * <code>\t</code> - **Tab** - Matches a TAB character. (character code of 9)
 
@@ -97,7 +97,7 @@ To start, the contents within our expression must have a '/' at the start AND en
 
 * <code>\0</code> - **null** - Matches any NULL characters. (character code of 0)
 
-## Author
+## Author: ***Vincent Yang***
 
 Thank you for taking the time to read through this tutorial. Please reach out to me at vyang1014888@gmail.com with any questions or issues.
 
