@@ -30,7 +30,7 @@ To start, the contents within our expression must have a '/' at the start AND en
 
 This is a basic match regex query which will specifically search for any case-sensitive instances of the characters 'ort'. Let's apply the previous expression to the following string:
         
-> Our associates here at WebTech sincerely thank you for your supp<a>ort</a>! We would not have been able to accomplish such a monumental task without your f<a>ort</a>itude and expertise.
+> Our associates here at WebTech sincerely thank you for your supp***ort***! We would not have been able to accomplish such a monumental task without your f***ort***itude and expertise.
 
 Notice that in the string above, we saw two instances of 'ort'. Applying the regex /ort/ to the previous string would give you the previous result.
 ### Anchors
@@ -56,7 +56,7 @@ Quantifiers are used to find instances of a specific character, group, or charac
 * <code>*</code> - Is similar to the <code>?</code> that the character preceding this is optional, but this quantifer returns matches in quantities from zero or more.
 
 * <code>{}</code> - Matches the quantity of the character preceding this quantifer.
->Example: /a\w{3,}/ will search for words that begin with the letter 'a' that are longer than 3 characters. Let's apply this expression to the string below: <br><br> We tried our h<a>ardest</a> to find <a>anything</a> that could give us more inform<a>ation</a> <a>about</a> the subject m<a>atter</a>.
+>Example: /a\w{3,}/ will search for words that begin with the letter 'a' that are longer than 3 characters. Let's apply this expression to the string below: <br><br> We tried our h***ardest*** to find ***anything*** that could give us more inform***ation*** ***about*** the subject m***atter***.
 
 ### Grouping Constructs
 
@@ -80,13 +80,13 @@ Grouping Constructs help
 ### Character Classes
 
 * <code>.</code> - **Character Set** - This matches any single character however, it does not match return or newline characters. 
-> Example expression /.at/ will result in = T<a>hat</a> shipment you sent was a much needed up<a>dat</a>e to our equipment.
+> Example expression /.at/ will result in = T***hat*** shipment you sent was a much needed up***dat***e to our equipment.
 
 * <code>[]</code> - **Character Set** - Match any characters inside of the brackets.
 
 * <code>[^]</code> - **Negated Set** - Match any characters not inside of the brackets.
 
-> Example expression /[^p]an/ will search for any character that is NOT 'p' followed by characters 'an'. This gives us  = Chelsea likes burgers more t<a>han</a> pizza.
+> Example expression /[^p]an/ will search for any character that is NOT 'p' followed by characters 'an'. This gives us  = Chelsea likes burgers more t***han*** pizza.
 
 * <code>[a-e]</code> - **Range** - Matches any characters that contains a character code between the two specified characters included between the brackets.
 
